@@ -1,0 +1,21 @@
+{
+  "name": "Lenis Injector",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Injects Lenis smooth scroll into pages.",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["inject.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["lenis.min.js", "init-lenis.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
