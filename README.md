@@ -12,3 +12,5 @@ click the 'load unpacked' button, and select the unzipped folder
 ?????
 
 Profit?
+
+Shoutout to https://lenis.darkroom.engineering/ <3
